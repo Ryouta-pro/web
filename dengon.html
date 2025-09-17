@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script>
+
+      function send() {
+        var text = document.form1.content.value;
+        if (text == "") {
+          alert("入力して");
+        } else {
+          message.innerText = text;
+          alert("伝言をセット!");
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <h1>伝言板</h1>
+    <p id="message">伝言はない</p>
+    <form name = "form1">
+      <input type = "text" name = "content">
+      <input type = "button" value="送信" onclick = "send();" >
+    </form>
+
+  </body>
+</html>
